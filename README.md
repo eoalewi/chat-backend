@@ -58,13 +58,13 @@ npm run build
 npm start
 ```
 
-### 6. Run with Docker
+<!-- ### 6. Run with Docker
 
 ```bash
 docker-compose up --build
 ```
 
----
+--- -->
 
 ## 📜 Scripts
 
