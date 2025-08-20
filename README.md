@@ -1,27 +1,4 @@
-Got it ✅
-You want your project’s **README.md** to look professional (like the NestJS one you showed), with badges, centered logo/title, and a structured breakdown of features, installation, usage, API, and license.
-
-Here’s a polished **boilerplate README.md** tailored for your realtime chat backend:
-
-````markdown
-<p align="center">
-  <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/344/external-chat-chat-flatart-icons-outline-flatarticons.png" width="120" alt="Chat Logo" />
-</p>
-
-<h1 align="center">Realtime Chat Backend</h1>
-
-<p align="center">
-  A feature-complete <b>chat backend</b> built with Node.js, Express, TypeScript, Socket.IO, Prisma, and MySQL.
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/express" target="_blank"><img src="https://img.shields.io/badge/Node.js-Express-green?logo=node.js" alt="Express" /></a>
-  <a href="https://socket.io" target="_blank"><img src="https://img.shields.io/badge/Socket.IO-Realtime-blue?logo=socket.io" alt="Socket.IO" /></a>
-  <a href="https://www.prisma.io/" target="_blank"><img src="https://img.shields.io/badge/Prisma-ORM-black?logo=prisma" alt="Prisma" /></a>
-  <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-Database-orange?logo=mysql" alt="MySQL" /></a>
-  <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/github/license/yourusername/chat-backend" alt="License" /></a>
-</p>
-
+# Realtime Chat Backend (Node + Express + Socket.IO + TypeScript + Prisma + MySQL) A feature-complete chat backend with auth, rooms, realtime messaging, typing, presence, rate limiting, and delivery/read receipts.
 ---
 
 ## ✨ Features
