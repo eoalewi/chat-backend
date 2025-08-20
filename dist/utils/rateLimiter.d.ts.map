@@ -1,0 +1,1 @@
+{"version":3,"file":"rateLimiter.d.ts","sourceRoot":"","sources":["../../src/utils/rateLimiter.ts"],"names":[],"mappings":"AAEA,qBAAa,wBAAwB;IAIjC,OAAO,CAAC,SAAS;IACjB,OAAO,CAAC,QAAQ;IAJlB,OAAO,CAAC,OAAO,CAAmC;gBAGxC,SAAS,EAAE,MAAM,EACjB,QAAQ,EAAE,MAAM;IAG1B,KAAK,CAAC,GAAG,EAAE,MAAM,GAAG,OAAO;CAa5B"}

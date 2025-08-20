@@ -20,7 +20,8 @@
 - **Database**: MySQL with Prisma ORM  
 - **Auth**: JWT & bcrypt  
 - **Infra**: Docker, docker-compose  
-- **Testing**: Jest, Supertest  
+- **Testing**: Jest, Supertest   
+- **Deploy**: Render   
 
 ---
 
