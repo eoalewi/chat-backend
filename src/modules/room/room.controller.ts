@@ -12,7 +12,11 @@ class RoomController {
         return res.status(400).json({ message: "Room name is required" });
       }
 
-      const room = await roomService.createRoom(name, isPrivate || false, userId);
+      const room = await roomService.createRoom(
+        name,
+        isPrivate || false,
+        userId,
+      );
       return res.status(201).json(room);
     } catch (error: any) {
       return res.status(400).json({ message: error.message });
@@ -29,7 +33,9 @@ class RoomController {
       }
 
       const member = await roomService.joinRoom(Number(roomId), userId);
-      return res.status(200).json({ message: "Joined room successfully", member });
+      return res
+        .status(200)
+        .json({ message: "Joined room successfully", member });
     } catch (error: any) {
       return res.status(400).json({ message: error.message });
     }

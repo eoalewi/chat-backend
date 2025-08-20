@@ -16,6 +16,7 @@ model User {
   lastSeen  DateTime?
   rooms     RoomMember[]
   messages  Message[]
+  receipts  MessageReceipt[] 
 }
 
 model Room {
@@ -48,4 +49,21 @@ model Message {
 
   sender User @relation(fields: [senderId], references: [id])
   room   Room @relation(fields: [roomId], references: [id])
+
+  receipts MessageReceipt[]
+}
+
+model MessageReceipt {
+  id         Int      @id @default(autoincrement())
+  messageId  Int
+  userId     Int
+  delivered  Boolean  @default(false)
+  read       Boolean  @default(false)
+  deliveredAt DateTime?
+  readAt     DateTime?
+
+  message Message @relation(fields: [messageId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
+
+  @@unique([messageId, userId])
 }

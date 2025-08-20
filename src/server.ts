@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 
 import authRoutes from "./modules/auth/auth.routes";
 import roomRoutes from "./modules/room/room.routes";
+import messageRoutes from "./modules/message/message.routes";
+import { setupSocket } from "./socket/socketHandler";
 
 dotenv.config();
 
@@ -16,6 +18,7 @@ app.use(express.json());
 // Routes
 app.use("/auth", authRoutes);
 app.use("/rooms", roomRoutes);
+app.use("/messages", messageRoutes);
 
 app.get("/", (req, res) => res.send("Chat API Running"));
 
@@ -28,12 +31,7 @@ const io = new Server(server, {
   },
 });
 
-io.on("connection", (socket) => {
-  console.log("User connected:", socket.id);
-  socket.on("disconnect", () => {
-    console.log("User disconnected:", socket.id);
-  });
-});
+setupSocket(io);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
