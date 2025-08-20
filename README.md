@@ -118,12 +118,6 @@ docker-compose up --build
 
 ## 📝 License
 
-MIT © [Your Name](https://github.com/yourusername)
+MIT © [Oluwatosin Alewi](https://github.com/eoalewi)
 
-```
-
----
-
-👉 This is clean, professional, and matches the style of the NestJS one you saw.  
-Would you like me to also add **usage examples with cURL or Postman requests** (so devs can quickly test APIs), or keep it lean?
 ```
